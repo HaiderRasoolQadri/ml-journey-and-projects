@@ -13,21 +13,34 @@ A FunctionTransformer is a general-purpose transformer that applies a user-defin
 
 **1. Log Transformation**
 
-- Formula: $𝑥'= log(𝑥)$ or $𝑥'= log(1+𝑥)$ if $(x ≥ 0)$
+Formula: 
+
+$$𝑥'= log(𝑥) or 𝑥'= log(1+𝑥) if (x ≥ 0)$$
+
 - Reduce right skewness, compresses large values.
 
 **2. Square Root Transformation**
-- Formula: $x'= \sqrt{x}$
+
+Formula: 
+
+$$x'= \sqrt{x}$$
+
 - Works for moderate skewness, stabilizes variance.
 
 **3. Reciprocal Transformation**
 
-- Formula: $x'= \frac{1}{x}$
+Formula: 
+
+$$x'= \frac{1}{x}$$
+
 - Useful for very large values, extreme skewness.
 
 **4. Exponential Transformation**
 
-- Formula: $x'= e^x$
+Formula: 
+
+$$x'= e^x$$
+
 - Stretches out small values (rarely used, risk of blow-up).
 
 ### Limitations of Function Transformers
@@ -46,23 +59,29 @@ It includes two main families: Box-Cox and Yeo-Johnson.
 
 - Works only for strictly positive data.
 
-- Formula: $x'(\lambda) =
+Formula: 
+
+$$x'(\lambda) =
 \begin{cases}
 \dfrac{x^\lambda - 1}{\lambda}, & \lambda \neq 0 \\
 \log(x), & \lambda = 0
-\end{cases}$
+\end{cases}$$
+
 - Finds λ automatically by maximum likelihood.
 
 **2. Yeo-Johnson Transformation**
 
 - Works for both positive and negative data.
-- Formula: $x'(\lambda) =
+Formula:
+
+$$x'(\lambda) =
 \begin{cases}
 \frac{(x+1)^\lambda - 1}{\lambda}, & x \geq 0, \; \lambda \neq 0 \\
 \log(x+1), & x \geq 0, \; \lambda = 0 \\
 -\frac{((-x+1)^{(2-\lambda)} - 1)}{2-\lambda}, & x < 0, \; \lambda \neq 2 \\
 -\log(-x+1), & x < 0, \; \lambda = 2
-\end{cases}$
+\end{cases}$$
+
 - Generalization of Box-Cox that allows negatives.
 
 ### Limitations of Power Transformers
