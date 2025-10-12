@@ -20,6 +20,7 @@ Limitations:
 ### 2. Mean Squared Error (MSE)
 
 Formula:
+
 $$𝑀S𝐸 = \frac{1}{n}\sum_{i = 1}^{n} (y_i - \hat{y_i})^2$$
 
 When to use:
@@ -47,6 +48,7 @@ Limitations:
 ### 4. R-squared (Coefficient of Determination)
 
 Formula:
+
 $$R^2 = 1 - \frac{\sum(y_i - \hat{y_i})^2}{\sum(y_i - \bar{y})^2}$$
 
 When to use:
@@ -61,6 +63,7 @@ Limitations:
 ### 5. Adjusted R-squared
 
 Formula:
+
 $$R_{adj}^{2} = 1 - (1 - R^2)\frac{n - 1}{n - p - 1}$$
 
 where,
