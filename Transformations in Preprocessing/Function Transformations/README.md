@@ -40,3 +40,4 @@ $$x'= e^x$$
 - Require manual selection → no automatic optimization.
 - Some transforms only work for positive values (e.g., log, sqrt).
 - Harder to interpret transformed features.
+ 

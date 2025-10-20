@@ -33,6 +33,13 @@ $$x'(\lambda) =
 
 - Generalization of Box-Cox that allows negatives.
 
+**3. Quantile Transformation**
+After either Box–Cox or Yeo–Johnson, the data might be approximately normal — but not perfectly.
+
+The quantile transformation then:
+- Maps empirical quantiles to those of a perfect normal (or uniform) distribution.
+- Guarantees Gaussian-looking features. 
+
 ### Limitations of Power Transformers
 - Box-Cox → only valid for positive features.
 - Interpretability is harder (transformed values don’t have intuitive meaning).
