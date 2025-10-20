@@ -44,3 +44,4 @@ The quantile transformation then:
 - Box-Cox → only valid for positive features.
 - Interpretability is harder (transformed values don’t have intuitive meaning).
 - Assumes transformation toward Gaussian is always helpful → not always true.
+- 
